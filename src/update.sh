@@ -26,8 +26,8 @@ set -e
 #
 #echo "Protos in tensorboard/compat/proto/ updated! You can now add and commit them."
 
-find src/tensorboardrs/proto/ -type f  -name '*.proto' -exec perl -pi \
+find src/ -type f  -name '*.proto' -exec perl -pi \
      -e 's|package tensorboardX;|package tensorboardrs;|g;' \
-     -e 's|tensorboardX/proto/|src/tensorboardrs/proto/|g;' \
+     -e 's|src/tensorboardrs/proto/|src/|g;' \
      -e 's|package tensorboardX.|package tensorboardrs.|g;' \
   {} +

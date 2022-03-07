@@ -28,7 +28,7 @@ limitations under the License.
 
 syntax = "proto3";
 
-import "src/tensorboardrs/proto/api.proto";
+import "src/api.proto";
 import "google/protobuf/struct.proto";
 
 package tensorboardrs.hparam;
